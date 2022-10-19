@@ -1,0 +1,21 @@
+uuid: 7b877f0f-f256-4588-8f7d-a775ec52caac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_recipe
+    - node.type.event
+id: node.event.field_recipe
+field_name: field_recipe
+entity_type: node
+bundle: event
+label: Recipe
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference
