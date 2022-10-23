@@ -1,0 +1,29 @@
+uuid: 43e7fb66-a929-46be-a749-05a7f3ef9e5a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_etiquetas_restaurante
+    - node.type.restaurante
+    - taxonomy.vocabulary.tags
+id: node.restaurante.field_etiquetas_restaurante
+field_name: field_etiquetas_restaurante
+entity_type: node
+bundle: restaurante
+label: Etiquetas
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

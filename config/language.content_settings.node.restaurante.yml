@@ -1,0 +1,11 @@
+uuid: 2b54cab3-e28c-4bcd-886f-67b1bda1aa1c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.restaurante
+id: node.restaurante
+target_entity_type_id: node
+target_bundle: restaurante
+default_langcode: site_default
+language_alterable: false

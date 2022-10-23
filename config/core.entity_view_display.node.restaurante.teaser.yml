@@ -1,0 +1,39 @@
+uuid: 3b7ede4c-8a06-4b92-849e-c7a1a3478a81
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.restaurante.body
+    - field.field.node.restaurante.field_etiquetas_restaurante
+    - field.field.node.restaurante.field_imagem
+    - field.field.node.restaurante.field_referencia_de_conteudo
+    - field.field.node.restaurante.field_referencia_de_conteudo_rec
+    - node.type.restaurante
+  module:
+    - text
+    - user
+id: node.restaurante.teaser
+targetEntityType: node
+bundle: restaurante
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_etiquetas_restaurante: true
+  field_imagem: true
+  field_referencia_de_conteudo: true
+  field_referencia_de_conteudo_rec: true
+  langcode: true

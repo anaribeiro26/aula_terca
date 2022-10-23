@@ -1,0 +1,27 @@
+uuid: fef3044a-285f-4b57-b4c9-59e9b0c16718
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - my_umami
+_core:
+  default_config_hash: 5prrlTxk8gDlnDH_jhnc0dNihAw8WT-RVZ3nrec_wiE
+id: my_umami_breadcrumbs
+theme: my_umami
+region: sidebar_first
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: '<front>'

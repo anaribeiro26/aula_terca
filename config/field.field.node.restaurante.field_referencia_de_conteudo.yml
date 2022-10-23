@@ -1,0 +1,29 @@
+uuid: be36e40c-f03b-4dd0-8cd6-9e1782350dbe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_referencia_de_conteudo
+    - node.type.chef
+    - node.type.restaurante
+id: node.restaurante.field_referencia_de_conteudo
+field_name: field_referencia_de_conteudo
+entity_type: node
+bundle: restaurante
+label: 'Referência de conteúdo'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      chef: chef
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

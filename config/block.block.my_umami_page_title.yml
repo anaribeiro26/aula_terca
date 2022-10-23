@@ -1,0 +1,27 @@
+uuid: ea6fa782-27a3-479c-aa85-08d5a1f98231
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - my_umami
+_core:
+  default_config_hash: iAhownPneFU_HfOgPVITz339xTxjd_yAzbcBOUBd4Sk
+id: my_umami_page_title
+theme: my_umami
+region: sidebar_first
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: '<front>'

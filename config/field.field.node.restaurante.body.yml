@@ -1,0 +1,23 @@
+uuid: b818cf6d-9130-48de-bd8a-f8167e94b125
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.restaurante
+  module:
+    - text
+id: node.restaurante.body
+field_name: body
+entity_type: node
+bundle: restaurante
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

@@ -1,0 +1,23 @@
+uuid: bd338a7a-e823-4ff3-838e-b996f6f906db
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.chef
+  module:
+    - text
+id: node.chef.body
+field_name: body
+entity_type: node
+bundle: chef
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary
